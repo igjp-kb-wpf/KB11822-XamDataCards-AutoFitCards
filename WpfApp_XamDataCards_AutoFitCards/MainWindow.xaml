@@ -1,0 +1,17 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp_XamDataCards_AutoFitCards"
+        xmlns:igWPF="http://schemas.infragistics.com/xaml/wpf" x:Class="WpfApp_XamDataCards_AutoFitCards.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <igWPF:XamDataCards x:Name="xamDataCards" DataSource="{Binding}">
+            <igWPF:XamDataCards.ViewSettings>
+                <igWPF:CardViewSettings  MaxCardCols="1" AutoFitCards="HorizontallyAndVertically" />
+            </igWPF:XamDataCards.ViewSettings>
+        </igWPF:XamDataCards>
+    </Grid>
+</Window>
